@@ -1,0 +1,1462 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#"
+     xml:base="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject">
+        <rdfs:comment xml:lang="en">This is an ontology about the history of jazz/</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Contributed_To -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Contributed_To">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this person played on this album</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Created -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Created">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this person created this album</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Helped_Pioneer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Helped_Pioneer">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this person helped pioneer</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Influenced -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Influenced">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Was_Influenced_By"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this genre was influenced by</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Is_based_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Is_based_on">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">this song is based on</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Originated_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Originated_in">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This genre originated in this city</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Played_With -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Played_With">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This person played with</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Was_Influenced_By -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Was_Influenced_By">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">which genre was influenced what other genre</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Was_Married_To -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Was_Married_To">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">was married to</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wrote -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wrote">
+        <rdfs:comment xml:lang="en">Who wrote the song</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#plays -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#plays">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">what instrument does a person play</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Year_of_Birth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Year_of_Birth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Year_of_Release -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Year_of_Release">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Clarinet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Clarinet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Woodwind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Instrument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Instrument"/>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Non_Traditional_Jazz_Instruments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Non_Traditional_Jazz_Instruments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Rhythm_Section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Rhythm_Section">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Saxophone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Saxophone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Woodwind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Songs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Songs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Vocals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Vocals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Woodwind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Woodwind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#A_Love_Supreme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#A_Love_Supreme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1965</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Africa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Africa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#African_Rhythms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#African_Rhythms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Blues"/>
+        <Originated_in rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Africa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#African_Slaves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#African_Slaves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Blues"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Percussion"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Voice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Alice_Coltrane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Alice_Coltrane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Avant_Garde_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Coltrane"/>
+        <Was_Married_To rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Coltrane"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Voice"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1937</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Alto_Clarinet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Alto_Clarinet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Clarinet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Alto_Saxophone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Alto_Saxophone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Saxophone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Anthropology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Anthropology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Songs"/>
+        <Is_based_on rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#I_got_Rhythm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Blakey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Blakey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bebop"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Charlie_Parker"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Duke_Ellington"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Coltrane"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Miles_Davis"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Thelonious_Monk"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wayne_Shorter"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Drums"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1919</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Science -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Science">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ascension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ascension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1966</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Avant_Garde_Jazz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Avant_Garde_Jazz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Fusion_Jazz"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#African_Rhythms"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modal_Jazz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bass -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bass">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Rhythm_Section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bebop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bebop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modal_Jazz"/>
+        <Originated_in rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#New_York"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Big_Band/Swing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Benny_Goodman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Benny_Goodman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Early_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Duke_Ellington"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Alto_Clarinet"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1909</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Blues -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Blues">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Originated_in rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Southern_United_States"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#African_Rhythms"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#European_Classical"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brian_Blade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brian_Blade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Contributed_To rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trilogy"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kenny_Garrett"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ornette_Coleman"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Hargrove"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wayne_Shorter"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Drums"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1970</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bud_Powell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bud_Powell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bebop"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Blakey"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Charlie_Parker"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Duke_Ellington"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Miles_Davis"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ornette_Coleman"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Thelonious_Monk"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1924</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Canvas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Canvas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2005</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Charlie_Parker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Charlie_Parker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bebop"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Blakey"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Duke_Ellington"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Coltrane"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Miles_Davis"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Thelonious_Monk"/>
+        <Wrote rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Anthropology"/>
+        <Wrote rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Donna_Lee"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Alto_Saxophone"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1920</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Contributed_To rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#The_Bitches_Brew"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trilogy"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Fusion_Jazz"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brian_Blade"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Mclaughlin"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kenny_Garrett"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Miles_Davis"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ornette_Coleman"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Pat_Metheny"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Robert_Glasper"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Hargrove"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wayne_Shorter"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1941</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Contributed_To rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trilogy"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brian_Blade"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kenny_Garrett"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Nate_Smith"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Pat_Metheny"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Robert_Glasper"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Hargrove"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wayne_Shorter"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bass"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1972</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_Scott -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_Scott">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kamasi_Washington"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Nate_Smith"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trumpet"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1983</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Common -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Common">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Like_Water_for_Chocolate"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Hip-Hop/Rap_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kendrick_Lamar"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Robert_Glasper"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Voice"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1972</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bebop"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Blakey"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bud_Powell"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Charlie_Parker"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Duke_Ellington"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ella_Fitzgerald"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Coltrane"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Miles_Davis"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Thelonious_Monk"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trumpet"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1917</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Donna_Lee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Donna_Lee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Songs"/>
+        <Is_based_on rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Indiana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Drums -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Drums">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Rhythm_Section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Duke_Ellington -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Duke_Ellington">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Big_Band/Swing"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Blakey"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Benny_Goodman"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bud_Powell"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Charlie_Parker"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ella_Fitzgerald"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Coltrane"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Louis_Armstrong"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1899</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Early_Jazz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Early_Jazz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Big_Band/Swing"/>
+        <Originated_in rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#New_Orleans"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Blues"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ella_Fitzgerald -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ella_Fitzgerald">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Charlie_Parker"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Duke_Ellington"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Frank_Sinatra"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Louis_Armstrong"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Tony_Bennett"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Voice"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1917</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Europe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Europe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#European_Classical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#European_Classical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Blues"/>
+        <Originated_in rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Europe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Fletcher_Henderson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Fletcher_Henderson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Big_Band/Swing"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Benny_Goodman"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1897</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Frank_Sinatra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Frank_Sinatra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Duke_Ellington"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ella_Fitzgerald"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Tony_Bennett"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Voice"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1915</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Funk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Funk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Hip-Hop/Rap_Jazz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Fusion_Jazz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Fusion_Jazz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Hip-Hop/Rap_Jazz"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Avant_Garde_Jazz"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Indian_Classical"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Rock"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#George_Gershwin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#George_Gershwin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Wrote rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#I_got_Rhythm"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1898</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Guitar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Guitar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Rhythm_Section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Harp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Harp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Non_Traditional_Jazz_Instruments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Watermelon_Man"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Fusion_Jazz"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modal_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Blakey"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brian_Blade"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Mclaughlin"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kamasi_Washington"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kenny_Garrett"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Miles_Davis"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ornette_Coleman"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Pat_Metheny"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Robert_Glasper"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Hargrove"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Tony_Bennett"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wayne_Shorter"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1940</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#I_got_Rhythm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#I_got_Rhythm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Songs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Imaginary_Day -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Imaginary_Day">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1997</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Indian_Classical -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Indian_Classical">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Fusion_Jazz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Indiana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Indiana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Songs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#J_Dilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#J_Dilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Hip-Hop/Rap_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Common"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Synthesizer"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1974</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#James_Hanley -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#James_Hanley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Wrote rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Indiana"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1897</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Jazz_in_Marciac -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Jazz_in_Marciac"/>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Jelly_Roll_Morton -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Jelly_Roll_Morton">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Early_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Louis_Armstrong"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1890</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Coltrane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Coltrane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Contributed_To rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kind_of_Blue"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#A_Love_Supreme"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ascension"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Avant_Garde_Jazz"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bebop"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modal_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Alice_Coltrane"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Blakey"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Charlie_Parker"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Duke_Ellington"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Miles_Davis"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ornette_Coleman"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Thelonious_Monk"/>
+        <Was_Married_To rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Alice_Coltrane"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Tenor_Saxophone"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1926</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Mclaughlin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Mclaughlin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Contributed_To rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#The_Bitches_Brew"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Fusion_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kenny_Garrett"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Guitar"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1942</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kamasi_Washington -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kamasi_Washington">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#The_Epic"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_Scott"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kendrick_Lamar"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Robert_Glasper"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Tenor_Saxophone"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1981</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kansas_City -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kansas_City">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kendrick_Lamar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kendrick_Lamar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#To_Pimp_a_Butterfly"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Hip-Hop/Rap_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Common"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kamasi_Washington"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Robert_Glasper"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Voice"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1987</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kenny_Garrett -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kenny_Garrett">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Sounds_from_the_Ancestors"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brian_Blade"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Mclaughlin"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Miles_Davis"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Pat_Metheny"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Hargrove"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wayne_Shorter"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Alto_Saxophone"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1960</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kind_of_Blue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kind_of_Blue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1959</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Lady_Gaga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Lady_Gaga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Tony_Bennett"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Voice"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1986</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Like_Water_for_Chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Like_Water_for_Chocolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#London -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#London">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Los_Angeles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Los_Angeles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Louis_Armstrong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Louis_Armstrong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Early_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Duke_Ellington"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ella_Fitzgerald"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Jelly_Roll_Morton"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trumpet"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Voice"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1901</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Miles_Davis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Miles_Davis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kind_of_Blue"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#The_Bitches_Brew"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bebop"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Fusion_Jazz"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modal_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Blakey"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bud_Powell"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Charlie_Parker"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Coltrane"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kenny_Garrett"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Thelonious_Monk"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trumpet"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1926</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modal_Jazz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modal_Jazz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Avant_Garde_Jazz"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bebop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Hip-Hop/Rap_Jazz"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Avant_Garde_Jazz"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#European_Classical"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Hip-Hop/Rap_Jazz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Monterey_Jazz_Festival -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Monterey_Jazz_Festival"/>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Montreal_Jazz_Festival -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Montreal_Jazz_Festival"/>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Montreux_Jazz_Festival -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Montreux_Jazz_Festival"/>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Nate_Smith -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Nate_Smith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_Scott"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Drums"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1974</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#New_Orleans -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#New_Orleans">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#New_York -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#New_York">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Newport_Jazz_Festival -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Newport_Jazz_Festival"/>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ornette_Coleman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ornette_Coleman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#The_Shape_of_Jazz_to_Come"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Avant_Garde_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brian_Blade"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bud_Powell"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Coltrane"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ravi_Shankar"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Alto_Saxophone"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1930</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Pat_Metheny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Pat_Metheny">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Imaginary_Day"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kenny_Garrett"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Hargrove"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wayne_Shorter"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Guitar"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1954</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Percussion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Percussion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Rhythm_Section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Rhythm_Section"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ravi_Shankar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ravi_Shankar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ornette_Coleman"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Sitar"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1920</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Robert_Glasper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Robert_Glasper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Contributed_To rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#To_Pimp_a_Butterfly"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Science"/>
+        <Created rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Canvas"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Hip-Hop/Rap_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Common"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kamasi_Washington"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kendrick_Lamar"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Hargrove"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1978</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Rock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Rock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Fusion_Jazz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Hargrove -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Hargrove">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brian_Blade"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kenny_Garrett"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Pat_Metheny"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wayne_Shorter"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trumpet"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1969</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bebop"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Charlie_Parker"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ella_Fitzgerald"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Coltrane"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Mclaughlin"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kenny_Garrett"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Miles_Davis"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Hargrove"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Thelonious_Monk"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wayne_Shorter"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Drums"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1925</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Sitar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Sitar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Non_Traditional_Jazz_Instruments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Sounds_from_the_Ancestors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Sounds_from_the_Ancestors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Southern_United_States -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Southern_United_States">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Synthesizer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Synthesizer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Non_Traditional_Jazz_Instruments"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Tenor_Saxophone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Tenor_Saxophone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Saxophone"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#The_Bitches_Brew -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#The_Bitches_Brew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1970</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#The_Epic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#The_Epic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#The_Shape_of_Jazz_to_Come -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#The_Shape_of_Jazz_to_Come">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1959</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Thelonious_Monk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Thelonious_Monk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bebop"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Art_Blakey"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bud_Powell"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Charlie_Parker"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Dizzy_Gillespie"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#John_Coltrane"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Miles_Davis"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Piano"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1917</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#To_Pimp_a_Butterfly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#To_Pimp_a_Butterfly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2015</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Tony_Bennett -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Tony_Bennett">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Ella_Fitzgerald"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Frank_Sinatra"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Lady_Gaga"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Voice"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1926</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trilogy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trilogy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trombone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trombone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trumpet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Trumpet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brass"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Drums"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Voice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Voice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Vocals"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Watermelon_Man -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Watermelon_Man">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Albums"/>
+        <Year_of_Release rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1962</Year_of_Release>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wayne_Shorter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Wayne_Shorter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Musicians"/>
+        <Contributed_To rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#The_Bitches_Brew"/>
+        <Helped_Pioneer rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modal_Jazz"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Brian_Blade"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Chick_Corea"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Christian_McBride"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Herbie_Hancock"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kenny_Garrett"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Pat_Metheny"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Hargrove"/>
+        <Played_With rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Roy_Haynes"/>
+        <plays rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Tenor_Saxophone"/>
+        <Year_of_Birth rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1933</Year_of_Birth>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Big_Band/Swing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Big_Band/Swing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Bebop"/>
+        <Originated_in rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Kansas_City"/>
+        <Originated_in rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#New_York"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Early_Jazz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Hip-Hop/Rap_Jazz -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Hip-Hop/Rap_Jazz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#R&amp;B"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Funk"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Modern_Jazz"/>
+        <Was_Influenced_By rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#R&amp;B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#R&amp;B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#R&amp;B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Styles_of_Music"/>
+        <Influenced rdf:resource="http://www.semanticweb.org/scott/ontologies/2022/11/INFO202FinalProject#Hip-Hop/Rap_Jazz"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
